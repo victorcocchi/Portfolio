@@ -26,7 +26,11 @@ body {
 
 
 .card {
-    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background: #adadad;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -50,6 +54,7 @@ body {
   }
 
   .card-title {
+    text-align: center;
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
     color: #222;

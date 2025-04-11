@@ -10,11 +10,71 @@
     --fonte-secundaria: 'Montserrat', sans-serif;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
-    background-image: url(/assets/papel-de-parede-branco-elegante-com-detalhes-dourados_23-2149095009.avif);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    
+    line-height: 1.6;    
+    background-color: #29B6F6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000e8f;
+    color: #29B6F6;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    color: #29B6F6;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.hero {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit
+    minmax(300ox, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (max-width:780px) {
+    .hero {
+        font-size: 1.5em;
+    }
+}
+
+.apresentacao {
+    display: flex;
+    justify-content: center;
+    color: white;
 }
 
 .portfolio-container {
@@ -27,12 +87,12 @@ body {
 
 .card {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 30px;
-    background: #adadad;
+    background: #1E88E5;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -62,13 +122,14 @@ body {
 
   .card-desc {
     font-size: 0.95rem;
-    color: #555;
+    font-weight: bold;
+    color: #000e8f;
     margin-bottom: 1rem;
   }
 
   .card-link {
     text-decoration: none;
-    color: #0066cc;
+    color: #000e8f;
     font-weight: bold;
   }
     
@@ -99,6 +160,12 @@ body {
 }
 
 .rodape {
-    color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+}
+
+.footer {
+    text-align: center;
+    color: #F6F6F6;
+    font-size: 10px;
 }
 

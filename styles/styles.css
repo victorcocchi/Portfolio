@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 :root {
-    --cor-primaria: #000000;
-    --cor-secundaria: #F6F6F6;
-    --cor-terciaria: #22D4FD;
+    --cor-1: #a9caaf;
+    --cor-2: #ccc79f;
+    --cor-3: #28355e;
+    --cor-4: #3f6588;
+    --cor-5: #bbc6d8;
+    --cor-6: black;
+    --cor-8: white;
+    
     --cor-hover: #272727;  
     
     --fonte-primaria: 'Krona One', sans-serif;
@@ -19,15 +24,15 @@
 
 body {
     line-height: 1.6;    
-    background-color: #29B6F6;
+    background-color: var(--cor-5);
 }
 
 .navbar {
     justify-content: space-around;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #000e8f;
-    color: #29B6F6;
+    padding: 13px 20px;
+    background-color: var(--cor-3);
+    color: var(--cor-2)
 }
 
 
@@ -42,17 +47,18 @@ body {
 }
 
 .navbar ul li a {
-    color: #000000;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-5);
     text-decoration: none;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 19px;
 }
 
 .hero {
     height: 20vh;
     display: flex;
     justify-content: center;
-    color: white;
+    color: var(--cor-3);
     text-align: center;
     font-size: 2em;
     padding: 20px;
@@ -75,7 +81,7 @@ body {
 .apresentacao {
     display: flex;
     justify-content: center;
-    color: white;
+    color: var(--cor-3);
 }
 
 .portfolio-container {
@@ -91,7 +97,7 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 30px;
-    background: #1E88E5;
+    background: var(--cor-2);
     border-radius: 15px;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -124,17 +130,15 @@ body {
 .card-desc {
     font-size: 0.95rem;
     font-weight: bold;
-    color: #000e8f;
+    color: var(--cor-4);
     margin-bottom: 1rem;
   }
 
 .card-link {
     text-decoration: none;
-    color: #000e8f;
+    color: var(--cor-3);
     font-weight: bold;
 }
-    
-
 
 
 
@@ -165,8 +169,10 @@ body {
 }
 
 .footer {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    color: #F6F6F6;
+    color: var(--cor-3);
     font-size: 15px;
 }
 

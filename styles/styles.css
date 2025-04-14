@@ -23,17 +23,18 @@ body {
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px 20px;
     background-color: #000e8f;
     color: #29B6F6;
 }
 
+
 .navbar ul {
     list-style-type: none;
     display: flex;
+    justify-content: center;
 }
 
 .navbar ul li {
@@ -41,7 +42,7 @@ body {
 }
 
 .navbar ul li a {
-    color: #29B6F6;
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
     font-size: 15px;
@@ -113,25 +114,25 @@ body {
     padding: 1rem;
   }
 
-  .card-title {
+.card-title {
     text-align: center;
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
     color: #222;
   }
 
-  .card-desc {
+.card-desc {
     font-size: 0.95rem;
     font-weight: bold;
     color: #000e8f;
     margin-bottom: 1rem;
   }
 
-  .card-link {
+.card-link {
     text-decoration: none;
     color: #000e8f;
     font-weight: bold;
-  }
+}
     
 
 
@@ -166,6 +167,6 @@ body {
 .footer {
     text-align: center;
     color: #F6F6F6;
-    font-size: 10px;
+    font-size: 15px;
 }
 
